@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lmu-meteo-api"
-version = "0.1.0"
+version = "0.2.0"
 description = "Python interface to request data from the LMU Meteorology station."
 authors = ["DanielKuebi <daniflug95@live.at>"]
 readme = "README.md"
