@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "lmu-weather-api"
+name = "lmu_meteo_api"
 version = "1.0.0"
 description = "Python interface to retrieve data from LMU Meteo API."
 readme = "README.md"
