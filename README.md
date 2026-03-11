@@ -1,33 +1,49 @@
 # LMU Meteo Data API
 
-The Meteorological Institute of the Ludwig-Maximilian University (LMU) in Munich provides free high-quality meteodata for non-commercial use through a web API that can be accessed without authentication. This package should help to access the API and return the data as a dataframe.<br>
-The package is published on PyPi for easy installation using pip.
+The LMU provides free high-quality meteodata through a web API, accessible without authentication. This package helps access the API and returns data as a DataFrame.
 
-> Don't forget to acknowledge the [Meteorological Institute of the LMU](https://www.meteo.physik.uni-muenchen.de/) if you use the data!
+The package is published on PyPI.
+
+> **Note:** Data access is free for non-commercial use. No accuracy guarantees are provided. If you publish anything based on this data, please acknowledge the [Meteorological Institute of LMU](https://www.meteo.physik.uni-muenchen.de/) in your acknowledgements.
 
 ## API documentation
-<url>https://www.meteo.physik.uni-muenchen.de/request-beta/</url>
 
-## How to install
+<https://www.meteo.physik.uni-muenchen.de/request-beta/>
 
+## Installation
+
+```bash
+pip install lmu-weather-api
 ```
-pip install lmu_meteo_api
+
+Or with [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv add lmu-weather-api
 ```
 
 ## For developers
 
-Set up you virtual environment
+Clone the repository and set up the environment with uv:
+
 ```bash
-python3.10 -m venv .venv
+git clone <repo-url>
+cd lmu_weather_api
+uv sync --group dev
 ```
 
-Install dependencies
+Run scripts or notebooks:
+
 ```bash
-poetry install
+uv run jupyter notebook
+uv run python your_script.py
 ```
 
-(Optional) Publish new package
+### Publishing
+
+Build and publish a new release:
+
 ```bash
-poetry build
-poetry publish
+uv build
+uv publish
 ```
