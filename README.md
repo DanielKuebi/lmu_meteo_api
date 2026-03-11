@@ -13,13 +13,13 @@ The package is published on PyPI.
 ## Installation
 
 ```bash
-pip install lmu-weather-api
+pip install lmu-meteo-api
 ```
 
 Or with [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uv add lmu-weather-api
+uv add lmu-meteo-api
 ```
 
 ## For developers
@@ -28,7 +28,7 @@ Clone the repository and set up the environment with uv:
 
 ```bash
 git clone <repo-url>
-cd lmu_weather_api
+cd lmu-meteo-api
 uv sync --group dev
 ```
 
